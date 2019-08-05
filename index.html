@@ -94,7 +94,21 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/da
         .attr("text-anchor", "middle")  
         .style("font-size", "16px") 
         .style("text-decoration", "underline")  
-        .text("Growth rate of species in different soils");
+        .text("Produce of species in different soil conditions in a season");
+
+  // Add annotation
+  svg.append("text")
+        .attr("x", (width / 2)-70)             
+        .attr("y", 50 + (margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "12px") 
+        .text("Highest");
+  svg.append("text")
+        .attr("x", (width / 2)-25)             
+        .attr("y", 170 + (margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "12px")  
+        .text("Least");
 
   // Show the bars
   
